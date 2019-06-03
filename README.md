@@ -16,9 +16,11 @@ The aim of this project was to implement crowd based face recognition using conv
 
 3. The problem with these features was that it was not robust to side angles and unorthodox orientations therefore we used YOLO v2 instead of HOG detection and fed its feature vector to the face recognition module.
 
-4. The face is recognized using the 68 specific face landmarks incorporating the the top of the chin, the outside edge of each eye, the inner edge of each eyebrow, etc. Then we will train a machine learning algorithm as a softmax or logistic regression output layer of the convolutional neural network to classify the identity of an individual.<br/>
+4. The face is recognized using the 68 specific face landmarks incorporating the the top of the chin, the outside edge of each eye, the inner edge of each eyebrow, etc. Then we will train a machine learning algorithm as a softmax or logistic regression output layer of the convolutional neural network to classify the identity of an individual.
 
-5.We classfiy those faces which are detected but not recognized by showing a bounding box so that the system knows that this is the possible face but can not detect due to the absense of appropriate features.
+5. We classfiy those faces which are detected but not recognized by showing a bounding box so that the system knows that this is the possible face but can not detect due to the absense of appropriate features.
+
+6. This project includes the Person Detector code as well, which was used to try and detect the person first and then feed that segment to face recognition module so to decrease the search space for it. But, it did not work well because of orientation problems.
 
 ## Prerequisites and Dependencies
 
