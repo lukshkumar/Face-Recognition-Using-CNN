@@ -13,8 +13,11 @@ The aim of this project was to implement crowd based face recognition using conv
 2. On the other hand, dlib provides it own face detection algorithm using HOG (Histogram of oriented gradients) which using the pre-defined features to compare the faces as attached below.
 
 <img src='https://cdn-images-1.medium.com/max/1250/1*6xgev0r-qn4oR88FrW6fiA.png' height="400" width="800">
+
 3. The problem with these features was that it was not robust to side angles and unorthodox orientations therefore we used YOLO v2 instead of HOG detection and fed its feature vector to the face recognition module.
-4. The face is recognized using the 68 specific face landmarks incorporating the the top of the chin, the outside edge of each eye, the inner edge of each eyebrow, etc. Then we will train a machine learning algorithm as a softmax or logistic regression output layer of the convolutional neural network to classify the identity of an individual.
+
+4. The face is recognized using the 68 specific face landmarks incorporating the the top of the chin, the outside edge of each eye, the inner edge of each eyebrow, etc. Then we will train a machine learning algorithm as a softmax or logistic regression output layer of the convolutional neural network to classify the identity of an individual.<br/>
+
 5.We classfiy those faces which are detected but not recognized by showing a bounding box so that the system knows that this is the possible face but can not detect due to the absense of appropriate features.
 
 ## Prerequisites and Dependencies
