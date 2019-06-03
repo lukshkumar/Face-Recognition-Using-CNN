@@ -44,6 +44,8 @@ The following dependencies must be installed to run the program.<br />
  
  ## References
  
- https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78
+ https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78<br>
+ https://towardsdatascience.com/cnn-based-face-detector-from-dlib-c3696195e01c<br>
+ https://towardsdatascience.com/faced-cpu-real-time-face-detection-using-deep-learning-1488681c1602
 
  
